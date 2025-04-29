@@ -21,6 +21,15 @@
       color: #fff;
       width: 250px;
       padding: 40px 20px;
+      text-align: center;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #fff;
     }
     .sidebar h1 {
       font-size: 1.8em;
@@ -29,6 +38,10 @@
     .sidebar p {
       font-size: 0.95em;
       color: #ccc;
+    }
+    .sidebar nav {
+      margin-top: 30px;
+      text-align: left;
     }
     .sidebar nav a {
       display: block;
@@ -62,13 +75,13 @@
 <body>
   <div class="container">
     <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile Photo" />
       <h1>Daniel Acevedo</h1>
       <p>PhD Student in Computer Science<br/>Time Series & LLMs</p>
       <nav>
         <a href="#about">About Me</a>
+        <a href="#education">Education</a>
         <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </nav>
     </aside>
@@ -76,6 +89,19 @@
       <section id="about">
         <h2>About Me</h2>
         <p>I am a PhD student at XYZ University, focusing on time series forecasting using large language models. My research interests include interpretable models, transformer architectures, and representation learning.</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Ph.D. in Computer Science</strong><br/>
+          XYZ University, 2023 – Present<br/>
+          Focus: Time Series Forecasting, LLMs</li>
+          <li><strong>M.Sc. in Artificial Intelligence</strong><br/>
+          ABC University, 2020 – 2022</li>
+          <li><strong>B.Sc. in Software Engineering</strong><br/>
+          DEF University, 2016 – 2020</li>
+        </ul>
       </section>
 
       <section id="publications">
@@ -86,19 +112,6 @@
           <li><strong>Title:</strong> On Transferability of Transformer Forecasting Models<br/>
           <em>Journal Name, 2023</em></li>
         </ul>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>TimeSeriesLLM: An open-source forecasting framework using LLMs.</li>
-          <li>PatchConvTST: A convolution-augmented PatchTST variant.</li>
-        </ul>
-      </section>
-
-      <section id="cv">
-        <h2>CV</h2>
-        <p><a href="cv.pdf" target="_blank">Download my CV (PDF)</a></p>
       </section>
 
       <section id="contact">
